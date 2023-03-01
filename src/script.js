@@ -1,6 +1,7 @@
 let stringReverse
 let stringPalindrome
 let stringMostCommon
+let stringVowels
 
 const validateQ1Button = document.querySelector('.btnQ1')
 const responseReverse = document.querySelector('.response-reverse')
@@ -10,6 +11,9 @@ const responsePalindrome = document.querySelector('.response-palindrome')
 
 const validateQ3Button = document.querySelector('.btnQ3')
 const responseMostCommon = document.querySelector('.response-mostcommon')
+
+const validateQ4Button = document.querySelector('.btnQ4')
+const responseVowels = document.querySelector('.response-vowels')
 
 //OnClick Q1
 validateQ1Button.addEventListener('click', () => {
@@ -27,6 +31,12 @@ validateQ2Button.addEventListener('click', () => {
 validateQ3Button.addEventListener('click', () => {
     stringMostCommon = document.getElementById('string-mostcommon').value
     responseMostCommon.innerHTML = printMostComChar(stringMostCommon)
+})
+
+//OnClick Q4
+validateQ4Button.addEventListener('click', () => {
+    stringVowels = document.getElementById('string-vowels').value
+    responseVowels.innerHTML = countVowels(stringVowels)
 })
 
 //P1Q1 Function
@@ -65,4 +75,9 @@ function printMostComChar (strg){
     }
 
     return letterMostCommon
+}
+
+//P1Q4 Function
+function countVowels (strg){
+    return strg.match(/[aeiouyéàîêâûúóí]/gi).length
 }
