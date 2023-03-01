@@ -10,12 +10,65 @@
 
 body {
   padding: 32px;
+  max-width: 1280px;
+  margin: auto;
+
+  p{
+    font-family: 'DM Sans';
+  }
 }
 
 h1{
-  font-family: 'Montserrat';
+  font-family: 'Syne';
+  text-align: center;
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.one{
+  margin-top: 32px;
+}
+
+h2{
+  font-family: 'DM Sans';
   text-align: center;
   font-weight: 700;
   font-size: 2em;
 }
 
+
+.p1qx{
+  margin-top: 8px;
+}
+
+label{
+    font-family: 'DM Sans';
+    font-size: 1.25em;
+}
+
+.inputs{
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+input{
+  border: 1px solid black;
+  font-family: 'DM Sans';
+  height: 30px;
+  width: 200px;
+  padding-left: 3px;
+}
+
+.btnValidate{
+  border: 1px solid black;
+  margin-left: 12px;
+  padding: 4px;
+  font-family: 'Montserrat';
+  font-size: 0.85em;
+}
+
+.responses{
+  margin-top: 8px;
+  text-align: center;
+}
