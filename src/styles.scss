@@ -96,6 +96,7 @@ input{
   border: 1px solid white;
   border-radius: 5px;
   color: white;
+  background-color: rgba(0, 0, 0, 0.35);
   font-family: 'DM Sans';
   height: 30px;
   width: 200px;
@@ -106,14 +107,22 @@ input{
   border: 1px solid white;
   border-radius: 5px;
   color: white;
+  background-color: rgba(0, 0, 0, 0.35);
   margin-left: 12px;
   padding: 4px;
   font-family: 'Montserrat';
   font-size: 0.85em;
 }
 
+.btnValidate:hover{
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.35);
+  color: black;
+
+}
+
 .responses{
-  margin-top: 8px;
+  margin-top: 16px;
   text-align: center;
   color: white;
 }
