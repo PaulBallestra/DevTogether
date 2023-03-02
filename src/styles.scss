@@ -2,16 +2,21 @@
 @import 'scss/base';
 
 //ORANGE : #FF6A00
-//CLEAR ORANGE : #FFF4ED
+//CLEAR ORANGE : #4D2000
 //BLUE : #0256FF
-//CLEAR BLUE : #EDF3FF
+//CLEAR BLUE : #001133
 //GREEN : #3DCD5C
-//CLEAR GREEN : #F1FBF3
+//CLEAR GREEN : #0C2912
+//YELLOW : #FFA600
+//CLEAR YELLOW : #4D3200
+//PURPLE : #3E1234
+//CLEAR PURPLE : #CD3DAD
 
 body {
   padding: 32px;
   max-width: 1280px;
   margin: auto;
+  background-color: black;
 
   p{
     font-family: 'DM Sans';
@@ -23,10 +28,43 @@ h1{
   text-align: center;
   font-weight: 700;
   font-size: 3em;
+  color: #FF6A00;
 }
 
 .one{
   margin-top: 32px;
+
+  .p1qx{
+    //background-color: green;
+    padding: 16px;
+    border-radius: 24px;
+  }
+
+  .q1{
+    border: 1px solid #0256FF;
+    background-color: #001133;
+  }
+
+  .q2{
+    border: 1px solid #FF6A00;
+    background-color: #4D2000;
+  }
+
+  .q3{
+    border: 1px solid #3DCD5C;
+    background-color: #0C2912;
+  }
+
+  .q4{
+    border: 1px solid #FFA600;
+    background-color: #4D3200;
+  }
+
+  .q5{
+    border: 1px solid #CD3DAD;
+    background-color: #3E1234;
+  }
+
 }
 
 h2{
@@ -34,6 +72,7 @@ h2{
   text-align: center;
   font-weight: 700;
   font-size: 2em;
+  color: #FF6A00;
 }
 
 
@@ -44,6 +83,7 @@ h2{
 label{
     font-family: 'DM Sans';
     font-size: 1.25em;
+    color: white;
 }
 
 .inputs{
@@ -53,7 +93,9 @@ label{
 }
 
 input{
-  border: 1px solid black;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
   font-family: 'DM Sans';
   height: 30px;
   width: 200px;
@@ -61,7 +103,9 @@ input{
 }
 
 .btnValidate{
-  border: 1px solid black;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
   margin-left: 12px;
   padding: 4px;
   font-family: 'Montserrat';
@@ -71,4 +115,5 @@ input{
 .responses{
   margin-top: 8px;
   text-align: center;
+  color: white;
 }
